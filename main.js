@@ -31,10 +31,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    if (window.location.pathname.includes("confirmation.html")) {
+    if (window.location.href.includes("confirmation.html")) {
         console.log("Confirmation Page Loaded");
-
+        
         const urlParams = new URLSearchParams(window.location.search);
+
+
+        const bookingNumber = urlParams.get("bookingNumber") || "N/A";
+        const userName = decodeURIComponent(urlParams.get("name") || "N/A");
+        const userEmail = decodeURIComponent(urlParams.get("email") || "N/A");
+        const tutorName = decodeURIComponent(urlParams.get("tutor") || "N/A");
+        const sessionDate = decodeURIComponent(urlParams.get("date") || "N/A");
+        const sessionTime = decodeURIComponent(urlParams.get("time") || "N/A");
+        const learningGoals = decodeURIComponent(urlParams.get("goals") || "N/A");
+
+        console.log("Extracted Data:", { bookingNumber, userName, userEmail, tutorName, sessionDate, sessionTime, learningGoals });
 
         document.getElementById("booking-number").innerText = urlParams.get("bookingNumber") || "N/A";
         document.getElementById("user-name").innerText = decodeURIComponent(urlParams.get("name") || "N/A");
