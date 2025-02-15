@@ -1,53 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("JavaScript Loaded!");
-
-    const bookButton = document.getElementById("book-appointment");
+    const bookButton = document.getElementById("book-btn");
 
     if (bookButton) {
-        console.log("Book Appointment button found!");
-
         bookButton.addEventListener("click", function (event) {
             event.preventDefault(); 
 
-            console.log("Book Appointment button clicked!");
+            const userName = encodeURIComponent(document.querySelector("input[name='name']").value);
+            const userEmail = encodeURIComponent(document.querySelector("input[name='email']").value);
+            const tutorName = encodeURIComponent(document.querySelector("select[name='tutor']").value);
+            const sessionDate = encodeURIComponent(document.querySelector("input[name='date']").value);
+            const sessionTime = encodeURIComponent(document.querySelector("input[name='time']").value);
+            const learningGoals = encodeURIComponent(document.querySelector("textarea[name='description']").value);
+            const bookingNumber = Math.floor(10000 + Math.random() * 90000); // Generate random ID
 
-            
-            const name = document.querySelector("#name").value;
-            const email = document.querySelector("#email").value;
-            const tutor = document.querySelector("#tutor").value;
-            const date = document.querySelector("#date").value;
-            const time = document.querySelector("#time").value;
-            const goals = document.querySelector("#learning-goals").value;
-
-            console.log("Form values captured:", { name, email, tutor, date, time, goals });
-
-            
-            const bookingNumber = Math.floor(10000 + Math.random() * 90000);
-            console.log("Generated Booking Number:", bookingNumber);
-
-            
-            const url = `confirmation.html?bookingNumber=${bookingNumber}&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&tutor=${encodeURIComponent(tutor)}&date=${encodeURIComponent(date)}&time=${encodeURIComponent(time)}&goals=${encodeURIComponent(goals)}`;
-
-            console.log("Redirecting to:", url);
-            window.location.href = url;
+            window.location.href = `confirmation.html?bookingNumber=${bookingNumber}&name=${userName}&email=${userEmail}&tutor=${tutorName}&date=${sessionDate}&time=${sessionTime}&goals=${learningGoals}`;
         });
-    } else {
-        console.error("Book Appointment button NOT found!");
     }
 
-    
     if (window.location.pathname.includes("confirmation.html")) {
-        console.log("Confirmation Page Detected!");
-        
         const urlParams = new URLSearchParams(window.location.search);
-        document.getElementById("booking-number").textContent = urlParams.get("bookingNumber") || "N/A";
-        document.getElementById("user-name").textContent = urlParams.get("name") || "N/A";
-        document.getElementById("user-email").textContent = urlParams.get("email") || "N/A";
-        document.getElementById("tutor-name").textContent = urlParams.get("tutor") || "N/A";
-        document.getElementById("session-date").textContent = urlParams.get("date") || "N/A";
-        document.getElementById("session-time").textContent = urlParams.get("time") || "N/A";
-        document.getElementById("learning-goals").textContent = urlParams.get("goals") || "N/A";
-        
-        console.log("Booking details displayed successfully.");
+        document.getElementById("booking-number").innerText = urlParams.get("bookingNumber") || "N/A";
+        document.getElementById("user-name").innerText = urlParams.get("name") || "N/A";
+        document.getElementById("user-email").innerText = urlParams.get("email") || "N/A";
+        document.getElementById("tutor-name").innerText = urlParams.get("tutor") || "N/A";
+        document.getElementById("session-date").innerText = urlParams.get("date") || "N/A";
+        document.getElementById("session-time").innerText = urlParams.get("time") || "N/A";
+        document.getElementById("learning-goals").innerText = urlParams.get("goals") || "N/A";
     }
 });
