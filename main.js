@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const learningGoals = encodeURIComponent(goalsInput.value);
             const bookingNumber = Math.floor(10000 + Math.random() * 90000); 
 
-            window.location.href = `https://yongen0324.github.io/TutorTutelage/comfirmation.html?bookingNumber=${bookingNumber}&name=${userName}&email=${userEmail}&tutor=${tutorName}&date=${sessionDate}&time=${sessionTime}&goals=${learningGoals}`;
+            window.location.href = `https://yongen0324.github.io/TutorTutelage/confirmation.html?bookingNumber=${bookingNumber}&name=${userName}&email=${userEmail}&tutor=${tutorName}&date=${sessionDate}&time=${sessionTime}&goals=${learningGoals}`;
         });
     }
 

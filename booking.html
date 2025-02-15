@@ -27,33 +27,34 @@
             
             <div class="form-container">
                 <h3>Book Tutoring Session</h3>
-                <form id="booking-form" onSubmit="return false;">
+                <form action="confirmation.html" method="GET">
                     <label for="name">Name*</label>
                     <input type="text" id="name" name="name" required>
-
+                
                     <label for="email">Email*</label>
                     <input type="email" id="email" name="email" required>
-
+                
                     <label for="tutor">Tutor</label>
-                    <select id="tutor" name="tutor" required>
+                    <select id="tutor" name="tutor">
                         <option value="" disabled selected>Select a Tutor</option>
                         <option value="Francisca – Python Expert">Francisca – Python Expert</option>
                         <option value="John – Web Development Specialist">John – Web Development Specialist</option>
                         <option value="Sophia – JavaScript Expert">Sophia – JavaScript Expert</option>
                         <option value="James – Java Enthusiast">James – Java Enthusiast</option>
                     </select>
-
+                
                     <label for="date">Date*</label>
                     <input type="date" id="date" name="date" required>
-
+                
                     <label for="time">Time*</label>
                     <input type="time" id="time" name="time" required>
-
+                
                     <label for="goals">Description of learning goals*</label>
                     <textarea id="goals" name="goals" rows="3" required></textarea>
-
-                    <button id="book-btn" class="btn">Book Tutoring</button>
+                
+                    <button type="submit" class="btn">Book Tutoring</button>
                 </form>
+                
             </div>
         </div>
     </section> 
