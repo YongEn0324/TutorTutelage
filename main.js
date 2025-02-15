@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    if (window.location.href.includes("confirmation.html")) {
+    if (window.location.pathname.includes("confirmation.html")) {
         console.log("Confirmation Page Loaded");
         
         const urlParams = new URLSearchParams(window.location.search);
