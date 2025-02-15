@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             // Redirect with parameters
-            window.location.href = `https://yongen0324.github.io/Tutor-Website/confirmation.html?bookingNumber=${bookingNumber}&name=${userName}&email=${userEmail}&tutor=${tutorName}&date=${sessionDate}&time=${sessionTime}&goals=${learningGoals}`;
+            window.location.href = `https://yongen0324.github.io/Tutor-Website/confirmation.html`;
         });
     }
 
