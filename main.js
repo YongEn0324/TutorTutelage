@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const bookButton = document.getElementById("book-btn");
 
     if (bookButton) {
-        console.log("✅ Book button found!");
-
         bookButton.addEventListener("click", function (event) {
             event.preventDefault(); // Stop form from refreshing the page
 
@@ -19,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Ensure all elements exist
             if (!nameInput || !emailInput || !tutorInput || !dateInput || !timeInput || !goalsInput) {
-                console.error("❌ One or more input elements NOT FOUND! Check your HTML form.");
                 return;
             }
 
@@ -32,18 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
             const learningGoals = encodeURIComponent(goalsInput.value);
             const bookingNumber = Math.floor(10000 + Math.random() * 90000); // Generate random booking number
 
-            console.log("✅ Redirecting to confirmation page...");
 
             // Redirect with parameters
             window.location.href = `./confirmation.html?bookingNumber=${bookingNumber}&name=${userName}&email=${userEmail}&tutor=${tutorName}&date=${sessionDate}&time=${sessionTime}&goals=${learningGoals}`;
         });
-    } else {
-        console.error("❌ Book Appointment button NOT found!");
     }
 
     // Populate confirmation page
     if (window.location.pathname.includes("confirmation.html")) {
-        console.log("✅ Populating confirmation page with booking details...");
 
         const urlParams = new URLSearchParams(window.location.search);
 
