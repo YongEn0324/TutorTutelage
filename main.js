@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const sessionTime = encodeURIComponent(timeInput.value);
             const learningGoals = encodeURIComponent(goalsInput.value);
             const bookingNumber = Math.floor(10000 + Math.random() * 90000); 
+            console.log("Redirecting with bookingNumber:", bookingNumber);
 
             window.location.href = `https://yongen0324.github.io/TutorTutelage/confirmation.html?bookingNumber=${bookingNumber}&name=${userName}&email=${userEmail}&tutor=${tutorName}&date=${sessionDate}&time=${sessionTime}&goals=${learningGoals}`;
         });
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Extracted Data:", { bookingNumber, userName, userEmail, tutorName, sessionDate, sessionTime, learningGoals });
 
         document.getElementById("booking-number").innerText = urlParams.get("bookingNumber") || "N/A";
+        console.log("Extracted Booking Number:", urlParams.get("bookingNumber"));
         document.getElementById("user-name").innerText = decodeURIComponent(urlParams.get("name") || "N/A");
         document.getElementById("user-email").innerText = decodeURIComponent(urlParams.get("email") || "N/A");
         document.getElementById("tutor-name").innerText = decodeURIComponent(urlParams.get("tutor") || "N/A");
