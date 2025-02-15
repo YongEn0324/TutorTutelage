@@ -32,8 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (window.location.href.includes("confirmation.html")) {
         console.log("Confirmation Page Loaded");
-        console.log("Redirecting with bookingNumber:", bookingNumber);
-
         
         const urlParams = new URLSearchParams(window.location.search);
 
