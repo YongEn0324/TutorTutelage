@@ -1,0 +1,508 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NavBar */
+.navbar {
+    background: #000;
+    padding: 20px 9%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.container {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;  
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 70px; 
+    align-items: center;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li:not(:last-child):not(:first-child) a:hover{
+    color:#8a5cd1;
+}
+
+.nav-links li:last-child {
+    margin-left: 450px; 
+}
+
+.nav-links li:first-child {
+    margin-right: 10px; 
+}
+
+.navtext{
+    font-size: 18px;
+}
+.logo{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.book-now {
+    background: #8d5cf6;
+    padding: 15px 18px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.book-now:hover {
+    background: #8a5cd1;
+}
+
+
+/* NavBar for the other pages*/
+.navbar2 {
+    background:#26335D;
+    padding: 20px 9%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.container {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;  
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 70px; 
+    align-items: center;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li:not(:last-child):not(:first-child) a:hover{
+    color:#8a5cd1;
+}
+
+.nav-links li:last-child {
+    margin-left: 450px; 
+}
+
+.nav-links li:first-child {
+    margin-right: 10px; 
+}
+
+.navtext{
+    font-size: 18px;
+}
+.logo{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.book-now {
+    background: #8d5cf6;
+    padding: 15px 18px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.book-now:hover {
+    background: #8a5cd1;
+}
+
+/* Home page*/
+.hero {
+    height: 100vh; 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('Images/photo-1576836165612-8bc9b07e7778.avif'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    text-align: left;
+    color: white;
+    position: relative;
+    padding-left: 8%; 
+}
+
+.hero .container {
+    width: 900px; 
+    max-width: 1000px;
+    height: center;
+    padding: 40px;
+    border-radius: 10px; 
+    position: relative;
+    z-index: 2;
+    margin-left: 50px;
+}
+
+.hero h1{
+    font-size: 20px;
+    color: #8d5cf6; 
+    height: 80px;
+}
+
+.hero h2 {
+    font-size:90px; 
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+.hero .btn {
+    background: #8d5cf6;
+    color:white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #8a5cd1;
+}
+
+/*Subject page*/
+.subjects-page {
+    background-color: #26335D;
+}
+
+.subjects {
+    text-align: center;
+    padding: 60px 8%;
+}
+
+.subjects h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.subjects p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px;
+}
+
+.subject-card {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%;
+    background: white;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.subject-card .learn-more {
+    margin-top: auto; 
+    text-align: center;
+}
+
+.subject-card img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+
+.subject-card h3 {
+    font-size: 25px;
+    color: #333;
+}
+
+
+.subject-card p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.subject-title {
+    font-size: 1.2rem; 
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    padding-bottom: 8px;
+    box-shadow: inset 0px -2px 0px #FF6A00; 
+    display: inline-block; 
+}
+
+
+.learn-more {
+    display: inline-block;
+    background: #8d5cf6;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.learn-more:hover {
+    background: #8a5cd1;
+}
+
+/* Tutors page*/
+.tutors-page {
+    background-color: #26335D;
+}
+.tutors {
+    text-align: center;
+    padding: 60px 9%;
+    color: white;
+}
+.tutors h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.tutors p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.tutor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.tutor-card {
+    background: white;
+    color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 22%;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.tutor-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.tutor-info {
+    padding: 15px;
+}
+
+.tutor-info h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tutor-info p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.tutor-info .price {
+    font-weight: bold;
+    color: #8d5cf6;
+    font-size: 1rem; 
+}
+
+.tutor-info .btn {
+    background: #8d5cf6;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: auto;
+}
+
+/* Booking Page */
+.booking-page {
+    background-color: #26335D;
+}
+
+.booking {
+    text-align: center;
+    padding: 60px 9%;
+    color: white;
+}
+
+.booking h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.booking p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.form-container {
+    background: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.form-container h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8d5cf6;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    color: #333;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-container .btn {
+    background: #8d5cf6;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container .btn:hover {
+    background: #6b42c9;
+}
+
+/*Comfirmation page*/
+
+.confirmation-page {
+    background-color: #26335D;
+}
+
+.confirmation {
+    text-align: center;
+    padding: 60px 9%;
+    color: white;
+}
+
+.confirmation h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.confirmation p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.confirmation-box {
+    background: #1E2A4A;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-box p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.confirmation .btn {
+    background: #8d5cf6;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.confirmation .btn:hover {
+    background: #6b42c9;
+}

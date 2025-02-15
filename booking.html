@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TechTutelage</title>
+</head>
+<body class="subjects-page">
+    <nav class="navbar2">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html" class="logo">TechTutelage</a></li>
+                <li><a href="index.html" class="navtext">Home</a></li>
+                <li><a href="subjects.html" class="navtext">Subjects</a></li>
+                <li><a href="tutor.html" class="navtext">Tutors</a></li>
+                <li><a href="review.html" class="navtext">Reviews</a></li>
+                <li><a href="contact.html" class="navtext">Contact</a></li> 
+                <li><a href="booking.html" class="book-now">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="booking">
+        <div class="container">
+            <h2>Book Your Coding Session</h2>
+            <p>Schedule a personalized one-on-one session with your preferred tutor and start your coding journey today.</p>
+            
+            <div class="form-container">
+                <h3>Book Tutoring Session</h3>
+                <form action="#" method="POST">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="tutor">Tutor</label>
+                    <select id="tutor" name="tutor">
+                        <option value="" disabled selected>Select a Tutor</option>
+                        <option value="python">Francisca – Python Expert</option>
+                        <option value="webdev">John – Web Development Specialist</option>
+                        <option value="javascript">Sophia – JavaScript Expert</option>
+                        <option value="java">James – Java Enthusiast</option>
+                    </select>
+
+                    <label for="date">Date*</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Time*</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="goals">Description of learning goals*</label>
+                    <textarea id="goals" name="goals" rows="3" required></textarea>
+
+                    <button type="submit" class="btn" id="book-appointment">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section> 
+    <script src="main.js"></script>
+</body>
+</html>
