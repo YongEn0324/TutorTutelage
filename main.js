@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const sessionTime = encodeURIComponent(timeInput.value);
             const learningGoals = encodeURIComponent(goalsInput.value);
             const bookingNumber = Math.floor(10000 + Math.random() * 90000); 
-            console.log("Redirecting with bookingNumber:", bookingNumber);
 
             window.location.href = `https://yongen0324.github.io/TutorTutelage/confirmation.html?bookingNumber=${bookingNumber}&name=${userName}&email=${userEmail}&tutor=${tutorName}&date=${sessionDate}&time=${sessionTime}&goals=${learningGoals}`;
         });
@@ -34,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (window.location.href.includes("confirmation.html")) {
         console.log("Confirmation Page Loaded");
+        console.log("Redirecting with bookingNumber:", bookingNumber);
+
         
         const urlParams = new URLSearchParams(window.location.search);
 
