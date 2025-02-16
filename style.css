@@ -39,7 +39,7 @@
 }
 
 .nav-links li:last-child {
-    margin-left: 450px; 
+    margin-left: auto; 
 }
 
 .nav-links li:first-child {
@@ -60,9 +60,6 @@
     background: #8d5cf6;
     padding: 15px 18px;
     border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
     display: flex;
     align-items: center;
     height: 40px;
@@ -106,7 +103,7 @@
 }
 
 .nav-links li:last-child {
-    margin-left: 450px; 
+    margin-left: 420px; 
 }
 
 .nav-links li:first-child {
@@ -125,12 +122,9 @@
 
 .book-now {
     background: #8d5cf6;
-    padding: 15px 18px;
+    padding: 20px 30px;
     border-radius: 5px;
     color: white;
-    font-weight: bold;
-    text-decoration: none;
-    display: flex;
     align-items: center;
     height: 40px;
 }
